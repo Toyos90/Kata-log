@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  td {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+  }
+  @keyframes highlight {
+    from { background-color: white; }
+    to { background-color: rgb(6, 6, 1); }
+  }
+  td:hover {
+    animation: highlight 1s;
+  }
+  button {
+    display: block;
+    margin: 16px auto;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
